@@ -1,0 +1,280 @@
+/***** FONTS *****/
+@import url('http://fonts.cdnfonts.com/css/chronicle-display');
+@import url('http://fonts.cdnfonts.com/css/svn-gilroy');
+
+/***** VAR *****/
+:root {
+    --main-text-color: #FFF;
+    --titles-text-color: #FBD784;
+}
+                
+body {
+    background: url("../img/BG.png") no-repeat,
+                url("../img/BG-Hero.png") no-repeat,
+                #0B1D26;
+    color: var(--main-text-color);
+    font-family: 'SVN-Gilroy', sans-serif;
+}
+
+/***** NAV *****/
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+}
+
+.logo {
+    font-family: 'Chronicle Display', sans-serif;
+    font-size: 2em;
+    line-height: 2.375em;
+    letter-spacing: 0.01em;
+    margin-left: 5%;
+}
+
+.menu__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__item {
+    font-size: 1.125em;
+    line-height: 2.375em;
+    margin: 1em 1em;
+}
+
+.menu__item a {
+    color: var(--main-text-color);
+}
+
+.account {
+    font-size: 1.125em;
+    line-height: 2.375em;
+    margin: 1em 2em 5% 0;
+}
+
+.account a {
+    color: var(--main-text-color);
+}
+
+/***** HOME *****/
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 80vh;
+}
+
+.follow {
+    margin: 20% 5%;
+    height: 20%;
+    vertical-align: middle;
+}
+
+.follow__text {
+    writing-mode: vertical-lr;
+    -webkit-writing-mode: vertical-lr;
+    -ms-writing-mode: vertical-lr;
+}
+
+.follow__icon {
+    display: flex;
+    flex-direction: column;
+}
+
+.follow__icon i {
+    margin: 0.5em;
+}
+
+.follow__icon a {
+    color: var(--main-text-color);
+}
+
+.home-main {
+    width: 50%;
+    transform: translate(0, 30%);
+    -webkit-transform: translate(0, 30%);
+    -moz-transform: translate(0, 30%);
+    -ms-transform: translate(0, 30%);
+    -o-transform: translate(0, 30%);
+    margin: auto;
+}
+.home-main__subtitle {
+    color: var(--titles-text-color);
+    font-size: 1.125em;
+    text-transform: uppercase;
+    letter-spacing: 0.375em;
+    font-weight: 800;
+}
+
+.home-main__title {
+    font-family: 'Chronicle Display', sans-serif;
+    font-size: 5.5em;
+    line-height: 114%;
+    font-weight: 600;
+}
+
+.home-main__line {
+    width: 3em;
+    height: 1px;
+    display: inline-block;
+    vertical-align: middle;
+    border-bottom: 1px solid;
+    margin-right: 1em;
+}
+
+.home-main__scroll {
+    font-size: 1.125em;
+    font-weight: 700;
+    line-height: 1.5em;
+    margin-top: 2em;
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 5%;
+    top: 30%;
+}
+
+.slider__btn {
+    border: 0;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1em;
+    width: 5em;
+    background-color: transparent;
+    color: var(--main-text-color);
+    font-size: 1.125em;
+    line-height: 1.5em;
+    text-align: right;
+}
+
+.slider__btn:hover {
+    border-right: 1px solid var(--main-text-color);
+}
+
+.slider__btn a {
+    color: var(--main-text-color);
+}
+
+/***** SECTIONS *****/
+#content {
+    width: 60%;
+    margin: 40em auto;
+}
+
+.step {
+    display: flex;
+    gap: 10%;
+    margin: 5% 0;
+}
+
+.step:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+
+.step__content {
+    width: 60%;
+}
+
+.titles {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.titles__num {
+    font-size: 15em;
+    font-weight: 700;
+    opacity: 10%;
+}
+
+.titles__line {
+    width: 5em;
+    height: 1px;
+    display: inline-block;
+    vertical-align: middle;
+    border-bottom: 1px solid;
+    margin-right: 1em;
+}
+
+.titles__subtitle {
+    color: var(--titles-text-color);
+    font-size: 1em;
+    letter-spacing: 0.375em;
+    text-transform: uppercase;
+    margin: 2em 0 2em -6em;
+}
+
+.titles__title {
+    font-family: 'Chronicle Display', sans-serif;
+    font-size: 4em;
+    font-weight: 300;
+    text-transform: capitalize;
+    margin: -1.5em 0 1em 2em;
+}
+
+.step__text {
+    margin-left: 7.5em;
+}
+
+.text__link {
+    color: var(--titles-text-color);
+}
+
+.step__image {
+    width: 30%;
+}
+
+.step__image img {
+    width: 100%;
+}
+
+/***** FOOTER *****/
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__left {
+    margin-left: 5%;
+    width: 20%;
+}
+
+.footer__title {
+    font-family: 'Chronicle Display', sans-serif;
+    font-size: 2em;
+    letter-spacing: 0.01em;
+    margin-bottom: 2em;
+}
+
+.footer__text {
+    font-size: 1.125em;
+    font-weight: 700;
+    margin-bottom: 5em;
+}
+
+.footer__credits {
+    font-size: 1.125em;
+    font-weight: 300;
+    opacity: 0.5;
+}
+
+.footer__fmenu {
+    margin-right: 5%;
+}
+
+.fmenu__title {
+    font-size: 1.2em;
+    color: var(--titles-text-color);
+
+}
+
+.fmenu__item {
+    font-size: 1.2em;
+    padding: 0.5em;
+}
+
+.fmenu__item a {
+    color: var(--main-text-color);
+}
